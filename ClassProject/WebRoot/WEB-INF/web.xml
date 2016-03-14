@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.lb.sev.Login</servlet-class>
+	</servlet>
+ 
+  <servlet>
+    <servlet-name>courseServlet</servlet-name>
+    <servlet-class>com.lb.sev.courseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>studentServlet</servlet-name>
+    <servlet-class>com.lb.sev.studentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>User</servlet-name>
+    <servlet-class>com.lb.sev.User</servlet-class>
+  </servlet>
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>courseServlet</servlet-name>
+    <url-pattern>/courseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>courseServlet</servlet-name>
+    <url-pattern>/addcourseServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>courseServlet</servlet-name>
+    <url-pattern>/delcourseServlet</url-pattern>
+  </servlet-mapping>
+     <servlet-mapping>
+    <servlet-name>courseServlet</servlet-name>
+    <url-pattern>/adminAddcourse</url-pattern>
+  </servlet-mapping>
+     <servlet-mapping>
+    <servlet-name>courseServlet</servlet-name>
+    <url-pattern>/adminCourse</url-pattern>
+  </servlet-mapping>
+     <servlet-mapping>
+    <servlet-name>courseServlet</servlet-name>
+    <url-pattern>/adminDelcourse</url-pattern>
+  </servlet-mapping>
+     <servlet-mapping>
+    <servlet-name>courseServlet</servlet-name>
+    <url-pattern>/adminUpdatecourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>studentServlet</servlet-name>
+    <url-pattern>/studentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>studentServlet</servlet-name>
+    <url-pattern>/scoreServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>studentServlet</servlet-name>
+    <url-pattern>/adminSelect</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>studentServlet</servlet-name>
+    <url-pattern>/adminAddStu</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>studentServlet</servlet-name>
+    <url-pattern>/adminUpdateStu</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>studentServlet</servlet-name>
+    <url-pattern>/adminDeleteStu</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>User</servlet-name>
+    <url-pattern>/changeUserPassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>User</servlet-name>
+    <url-pattern>/AdminSelectUser</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>User</servlet-name>
+    <url-pattern>/AdminAddUser</url-pattern>
+  </servlet-mapping>
+     <servlet-mapping>
+    <servlet-name>User</servlet-name>
+    <url-pattern>/AdminUpdateUser</url-pattern>
+  </servlet-mapping>
+       <servlet-mapping>
+    <servlet-name>User</servlet-name>
+    <url-pattern>/AdminDelUser</url-pattern>
+  </servlet-mapping>
+
+</web-app>
